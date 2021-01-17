@@ -9,10 +9,8 @@ To simulate our API's we use json-server package to maintain them avaiable in lo
 - On terminal run: 
 	yarn install
 - You must open two terminals (inside of project) for json-server works and don't close:
-	Terminal 1 - Run: 
-		json-server --watch db_one.json 
-	Terminal 2 - Run: 
-		json-server --watch --port 3333 db_two.json 
+	- Terminal 1 - Run: json-server --watch db_one.json 
+	- Terminal 2 - Run: json-server --watch --port 3333 db_two.json 
 - Open another terminal and run: 
 	node main.js
 	
