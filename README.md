@@ -4,6 +4,8 @@ This is a simple Middleware project made with Node.js, which the purpose is take
 
 To simulate our API's we use json-server package to maintain them avaiable in localhost and two files that's represent the respective data.
 
+PS: Main code are in Dev branch
+
 # How to run
 - Clone the project 
 - On terminal run: 
