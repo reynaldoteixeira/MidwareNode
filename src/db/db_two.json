@@ -1,19 +1,5 @@
 {
   "menuitem": [
-    {
-      "value": "New",
-      "onclick": "CreateNewDoc()",
-      "id": 1
-    },
-    {
-      "value": "Open",
-      "onclick": "OpenDoc()",
-      "id": 2
-    },
-    {
-      "value": "Close",
-      "onclick": "CloseDoc()",
-      "id": 3
-    }
+ 
   ]
 }
