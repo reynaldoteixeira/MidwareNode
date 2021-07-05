@@ -6,20 +6,22 @@ async function main() {
     console.log("main works");
     
     try {
+        console.log("Acesso ao cliente 1")
         clientOne = await ClientOne.accessClientOne();
     } catch(err){
         logger.error("Fail access client one");
     }
     
-    
+    let clientOneMenuitem = clientOne.popup.menuitem;
 
-    for(var x = 0; x <= clientOne["popup"]["menuitem"].length; x++){
+    for(var x = 0; x <= clientOneMenuitem.length; x++){
+       
+        menuItemValue = clientOneMenuitem[x].value;
+        menuItemOnClick = clientOneMenuitem[x].onclick;
 
-        menuItemValue = clientOne["popup"]["menuitem"][x]["value"];
-        menuItemOnClick = clientOne["popup"]["menuitem"][x]["onclick"];
 
         try{
-            await ClientTwo.createValuesClientTwo(menuItemValue,menuItemOnClick);
+            ClientTwo.createValuesClientTwo(menuItemValue,menuItemOnClick);
         } catch(error){
             logger.error("Post failed in for inside on main.js");
         }
